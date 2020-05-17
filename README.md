@@ -5,7 +5,7 @@ Create as dashboard in the style of a R Shinydashboard.
 The **index.html** has a basic dashboard template of a header, sidebar and body.
 This is in a Shiny style, and so uses Bootstrap and AdminLTE CSS, as well as shinydashboard.css.
 
-The **shinylike.js** file contains various functions that mimic R shinydashboard functions, eg: 
+The **shinylike.js** file contains various functions that mimic R shinydashboard functions, eg:  
 dashboardHeader()  
 sidebarMenu()  
 menuItem() 
@@ -26,9 +26,9 @@ sidebarMenu()
 ```
 
 **Main body content** 
-```fluidRow()``` only needs to be defined once for each tab. ```grid``` defines the total number of rows and columns (1-12). 
-Each cell is automatically assigned a unique **id** based on the tabName, row and box number eg. **"tab1-row0-box2"** 
-Nb. row and box numbers start from 0. 
+```fluidRow()``` only needs to be defined once for each tab. ```grid``` defines the total number of rows and columns (1-12).  
+Each cell is automatically assigned a unique **id** based on the tabName, row and box number eg. **"tab1-row0-box2"**  
+Nb. row and box numbers start from 0.  
 ```box()``` has a similar usage to RShiny, but the *id* of the box must be specified.
 ```js
 fluidRow("section1", grid = [[6, 6], [12]])
