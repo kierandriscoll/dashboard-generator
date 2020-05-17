@@ -35,7 +35,7 @@ fluidRow("section1", grid = [[6, 6], [12]])
 box("section1-row0-box0", solidHeader = true, status = "warning", title = "fddgfgf", height = "200px")
 ```
 
-**Input boxes** 
+**Input boxes (Only appear in sidebar)** 
 These are similar to RShiny usage; Selectize.js is used to style these. Each input must be given a unique id:
 ```j
 selectInput("INID-A", "Choose Country", ["France","Germany","USA","China","Japan"])
