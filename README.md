@@ -20,7 +20,7 @@ These are similar to RShiny usage although they are used sequentially instead of
 dashboardHeader(title = "Auto Title", disable = false)
 dashboardSidebar(disable = false, collapsed = false)
 sidebarMenu()
-  menuItem("Section 1", tabName = "section1")
+  menuItem("Section 1", tabName = "section1", activity = "active")
   menuItem("Section 2", tabName = "section2")
   menuItem("Section 3", tabName = "section3")
 ```
