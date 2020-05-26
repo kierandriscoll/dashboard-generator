@@ -45,6 +45,6 @@ selectInput("INID-B", "Choose Year", ["2019","2018","2017","2016"])
 **changeColors()** 
 An extra function to control the general color scheme: 
 ```js
-changeColors(skinColor = "red", sidebar_background = "darkgrey", body_background = "white")
+changeColors(skinColor = "red", sidebar_background = "darkgrey", body_background = "#f2f2f2")
 ```
 
