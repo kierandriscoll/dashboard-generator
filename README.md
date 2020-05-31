@@ -27,19 +27,25 @@ sidebarMenu()
 
 **Main body content** 
 ```fluidRow()``` only needs to be defined once for each tab. ```grid``` defines the total number of rows and columns (1-12).  
-Each cell is automatically assigned a unique **id** based on the tabName, row and box number eg. **"tab1-row0-box2"**  
-Nb. row and box numbers start from 0.  
+Each cell is automatically assigned a unique **id** based on the tabName, row and box number eg. **"tab1-row1-box2"**    
 ```box()``` has a similar usage to RShiny, but the *id* of the box must be specified.
 ```js
 fluidRow("section1", grid = [[6, 6], [12]])
-box("section1-row0-box0", solidHeader = true, status = "warning", title = "fddgfgf", height = "200px")
+box("section1-row1-box1", solidHeader = true, status = "warning", title = "fddgfgf", height = "200px")
 ```
 
 **Input boxes (Only appear in sidebar)** 
-These are similar to RShiny usage; Selectize.js is used to style these. Each input must be given a unique id:
+These are similar to RShiny usage; Each input must be given a unique id:
 ```j
-selectInput("INID-A", "Choose Country", ["France","Germany","USA","China","Japan"])
-selectInput("INID-B", "Choose Year", ["2019","2018","2017","2016"])
+selectInput("ID1", "Choose Country", ["France","Germany","USA","China","Japan"])
+selectInput("ID2", "Choose Year", ["2019","2018","2017","2016"])
+// Selectize.js is used to style these. 
+```
+```j
+dateRangeInput("ID3", "Pick dates", "2019-01-01", "2021-12-31")
+```
+```j
+fileInput("ID4")
 ```
 
 **changeColors()** 
